@@ -16,7 +16,7 @@ Sample value of JSON Key is like this:
   "project_id": "django-sample",
   "private_key_id": "40 characters unique id in here",
   "private_key": "-----BEGIN PRIVATE KEY-----\n very long character ----END PRIVATE KEY-----\n",
-  "client_email": "django-cobaan@appspot.gserviceaccount.com",
+  "client_email": "django-sample@appspot.gserviceaccount.com",
   "client_id": "21 digit number in here",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
@@ -30,7 +30,7 @@ The configuration for Google Storage in the production.py within settings folder
 ```py
 DEFAULT_FILE_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
 STATICFILES_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
-GS_BUCKET_NAME = "django-cobaan-bucket"
+GS_BUCKET_NAME = "django-sample-bucket"
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(
     BASE_DIR, "bucket_cred.json"
